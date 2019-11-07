@@ -1,7 +1,8 @@
 def show_menu():
-    print("1. Ask Questions")
-    print("2. Add Questions")
-    print("3. End Game")
+    print("\n \nQUIZ GAME \n")
+    print("1. Play the quiz")
+    print("2. Add New Questions")
+    print("3. End Game\n")
 
     option = input("Enter Option: ")
     return option
@@ -40,12 +41,11 @@ def ask_questions():
         guess = input(question + "> ")
         if guess == answer:
             score += 1
-            print("Correct")
-            print(score)
+            print("Correct - your score is {0}".format(score))
         else:
             print("Incorrect")
         
-    print("you got {0} correct out of {1}".format(score,number_of_questions))
+    print("Game Over - You got {0} correct out of {1}".format(score,number_of_questions))
 
     
 
